@@ -4,6 +4,7 @@ import Home from "../Home/Home";
 import About from "../About/About";
 import Music from "../Music/Music";
 import CryptoChecker from "../CryptoChecker/CryptoChecker";
+import PasswordValidator from "../PasswordValidator/PasswordValidator";
 
 
 const Routes = ()=>{
@@ -15,7 +16,10 @@ const Routes = ()=>{
             <Link to="/">Hooks</Link>
           </li>
           <li>
-            <Link to="/cryptochecker">Custom Hook Example </Link>
+            <Link to="/cryptochecker">Custom Hook - Crypto Currency </Link>
+          </li>
+          <li>
+            <Link to="/password">Custom Hook- Password Validator</Link>
           </li>
           <li>
             <Link to="/about">About</Link>
@@ -31,6 +35,7 @@ const Routes = ()=>{
         <Route  path="/about" component={About} />
         <Route  path="/music" component={Music} />
         <Route  path="/cryptochecker" component={CryptoChecker} />
+        <Route  path="/password" component={PasswordValidator} />
       </div>
     </Router>
     )
